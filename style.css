@@ -1,0 +1,30 @@
+body{
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+}
+
+
+h1{
+  font-size: 30px;
+  color:#1D519E;
+}
+
+
+/* 工具栏toolbar */
+
+.toolbar{
+  width: 100%;
+  display:block
+}
+
+.toolbar > h1{
+  display: inline-block;
+  margin-left: 16px;
+}
+
+
+.toolbar > a{
+  float: right;
+  margin: 16px;
+  text-align: right;
+}
