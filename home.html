@@ -3,7 +3,7 @@
  * @author ZHU Fangda
  * @Date 2020-01-28 195242
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-01-28 21:52:41
+ * @LastEditTime : 2020-01-30 16:01:19
  -->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -16,8 +16,10 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bottom_nav.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="portail.css">
+    <link rel="stylesheet" href="home.css">
+    
     
     
   </head>
@@ -25,56 +27,83 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="toolbar">
-      <h1>Hi! name</h1>
-      <a href="portail.html">
-        <img src="img/menu.svg"
-          width="30px"
-        />
-      </a>
 
-    </div>
-    
-    <div id="date">
-      <span>23</span>
-      <span>01</span>
-      <span>2020</span>
-    </div>
-
-    <div id="bmi">
-      <span>BMI</span>
-      <span>25</span>
-    </div>
-    
-    <table id="energy">
-      <tr>
-        <th>Intake</th>
-        <td>850 kcal</td>
-      </tr>
-
-      <tr>
-        <th>Burn</th>
-        <td>300 kcal</td>
-      </tr>
-    </table>
+    <div id="container">
+      <div class="toolbar">
+        <h1>Hi! name</h1>
+        <a href="portail.html">
+          <img src="img/menu.svg"
+            width="30px"
+          />
+        </a>
   
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+      
+      <div id="date">
+        <span>23</span>
+        <span>01</span>
+        <span>2020</span>
+      </div>
+  
+      <div id="bmi">
+        BMI<br>
+        25
+      </div>
+      
+      <div>
+        <table id="energy">
+          <tr>
+            <th>Intake</th>
+            <td>850 kcal</td>
+          </tr>
     
-    <img src="img/star.svg"
-      width="49px"
-    />
+          <tr>
+            <th>Burn</th>
+            <td>300 kcal</td>
+          </tr>
+        </table>
+      </div>
+
+      
+      <div>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+         
+      </div>
+     
+      <div>
+        <img src="img/star.svg"
+        width="49px"/>
+    
+      </div>
+      
+      <div>
+        <img id="chart" src="img/chart.svg"
+      width="275px"/>
+  
+      </div>
+      
+    
+    </div>
 
     
-    <img id="chart" src="img/chart.svg"
-    width="275px"/>
-
-
 
     <div id="bottom-nav">
-      <img src="img/home_selected.svg"/>
-      <img src="img/record_no_selected.svg"/>
-      <img src="img/search_no_selected.svg"/>
-      <img src="img/command_no_selected.svg"/>
+      <a href="home.html">
+        <img src="img/home_selected.svg"/>
+      </a>
+      
+      <a href="record.html">
+        <img src="img/record_no_selected.svg"/>  
+      </a>
+
+      <a href="search.html">
+        <img src="img/search_no_selected.svg"/>  
+      </a>
+      
+      <a href="command">
+        <img src="img/command_no_selected.svg"/>
+      </a>
+      
     </div>
     <script src="" async defer></script>
   </body>

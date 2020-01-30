@@ -1,0 +1,26 @@
+#toolbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#bottom-nav{
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-color: #FEC956;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: -5; */
+  /* padding: 8px; */
+}
+
+#bottom-nav > a{
+  margin-left: 16px;
+  margin-right: 16px;
+}
