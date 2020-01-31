@@ -32,6 +32,7 @@
   padding: 8px;
   font-size: 25px;
   text-align: center;
+  box-shadow:  0 0.3em 1em #000
 }
 
 
@@ -44,6 +45,7 @@
   font-weight: bold;
   font-size: 25px;
   text-align: center;
+  box-shadow:  0 0.3em 1em #000
 }
 
 
@@ -55,3 +57,6 @@
   color: #F7E9D0;
 }
 
+#chart{
+  margin-bottom: 50px ;
+}

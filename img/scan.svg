@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="74.00001999999995" width="104">
+  <g opacity="1">
+    <g opacity="1">
+      <path fill="rgb(29,81,158)" fill-opacity="1" opacity="1" fill-rule="evenodd" d="M20.576936241479928 0L83.42309692307678 0C87.28650209453478 0 90.42309692307678 3.136594828542 90.42309692307678 7L90.42309692307678 67.00001999999995C90.42309692307678 70.86342517145795 87.28650209453478 74.00001999999995 83.42309692307678 74.00001999999995L20.576936241479928 74.00001999999995C16.71353107002193 74.00001999999995 13.576936241479928 70.86342517145795 13.576936241479928 67.00001999999995L13.576936241479928 7C13.576936241479928 3.136594828542001 16.713531070021926 8.881784197001252e-16 20.576936241479928 0Z"/>
+    </g>
+    <g opacity="1">
+      <text font-size="0" transform="translate(0, 20.076917074000562)">
+        <tspan font-size="20" font-family="Arial Black" font-weight="900" style="white-space: pre;text-transform: none" fill="rgb(247,233,208)" x="25.8818359375" y="22">scan</tspan>
+      </text>
+    </g>
+    <g opacity="1">
+      <path fill-opacity="0" stroke="rgb(247,233,208)" stroke-opacity="1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="1" fill-rule="evenodd" d="M22 28.076917074000647L22 9.076917074000562L42.0000000000001 9.076917074000562"/>
+    </g>
+    <g transform="translate(72.00000000000006, 56.576917074000605) rotate(180.00006436155007) translate(-72.00000000000006, -56.576917074000605)" opacity="1">
+      <path fill-opacity="0" stroke="rgb(247,233,208)" stroke-opacity="1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="1" fill-rule="evenodd" d="M62 66.07691707400065L62 47.07691707400056L82.0000000000001 47.07691707400056"/>
+    </g>
+    <g transform="translate(31.50000000000005, 57.076917074000605) rotate(270.0000965423251) translate(-31.50000000000005, -57.076917074000605)" opacity="1">
+      <path fill-opacity="0" stroke="rgb(247,233,208)" stroke-opacity="1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="1" fill-rule="evenodd" d="M21.5 66.57691707400065L21.5 47.57691707400056L41.5000000000001 47.57691707400056"/>
+    </g>
+    <g transform="translate(72.50000000000006, 19.076917074000605) rotate(90.00003218077504) translate(-72.50000000000006, -19.076917074000605)" opacity="1">
+      <path fill-opacity="0" stroke="rgb(247,233,208)" stroke-opacity="1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="1" fill-rule="evenodd" d="M62.5 28.576917074000647L62.5 9.576917074000562L82.5000000000001 9.576917074000562"/>
+    </g>
+  </g>
+</svg>

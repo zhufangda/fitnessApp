@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="187.31295379959997" width="325.0000399999999">
+  <defs>
+    <linearGradient id="linearGradient-2" x1="0.45" y1="0.22" x2="0.66" y2="0.89">
+      <stop offset="0.36" stop-color="rgb(214,47,63)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+    </linearGradient>
+    <path id="path-3" opacity="1" fill-rule="evenodd" d="M70.76159767489621 156.0414672925918C70.76159767489621 156.0414672925918 78.80697603304925 67.81120179067595 162.94003243330746 67.81120179067594C247.0730888335657 67.81120179067592 255.1184671917187 156.0414672925918 255.1184671917187 156.0414672925918"/>
+  </defs>
+  <g opacity="1">
+    <g opacity="1">
+      <path fill="url(#linearGradient-2)" fill-opacity="1" opacity="1" fill-rule="evenodd" d="M0 155.5398499252384C0 155.5398499252384 14.183080321703342 3.244266408324015e-14 162.50002000000006 1.4210854715202004e-14C310.8169596782968 -4.020954652836133e-15 325.0000400000001 155.5398499252384 325.0000400000001 155.5398499252384"/>
+    </g>
+    <g opacity="1">
+      <use xlink:href="#path-3" fill="rgb(247,233,208)" fill-opacity="1"/>
+      <use xlink:href="#path-3" fill-opacity="0" stroke="rgb(254,201,86)" stroke-opacity="1" stroke-width="9" stroke-linecap="butt" stroke-linejoin="miter"/>
+    </g>
+    <g opacity="1">
+      <text font-size="0" transform="translate(84.8797296989877, 112.48475394354475)">
+        <tspan font-size="25" font-family="Arial Black" font-weight="900" style="white-space: pre;text-transform: none" fill="rgb(214,47,63)" x="19.26456624200189" y="27">850 </tspan>
+        <tspan font-size="25" font-family="Arial Black" font-weight="900" style="white-space: pre;text-transform: none" fill="rgb(214,47,63)">kcal</tspan>
+      </text>
+    </g>
+    <g opacity="1">
+      <text font-size="0" transform="translate(7.105427357601002e-15, 156.04146729259182)">
+        <tspan font-size="20" font-family="Arial Black" font-weight="900" style="white-space: pre;text-transform: none" fill="rgb(29,81,158)" x="15.738833557468496" y="22">min</tspan>
+      </text>
+    </g>
+    <g opacity="1">
+      <text font-size="0" transform="translate(253.52235054829197, 156.04146729259182)">
+        <tspan font-size="20" font-family="Arial Black" font-weight="900" style="white-space: pre;text-transform: none" fill="rgb(214,47,63)" x="12.398989807468496" y="22">max</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+#container{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center ;
+}
+
+h1{
+  width: 100%;
+  text-align: center;
+}
+
+#container > div{
+  margin: 16px;
+}
+
+.record-list{
+  /* margin-left: 32px;
+  margin-right: 32px; */
+  /* padding: 32px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.col{
+  width: 40%;
+}
+.record-item{
+  /* border-style:solid; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom:solid #FEC956 8px;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.number{
+  padding-left: 8px;
+  font-size: 25px;
+  color:#1D519E;
+}
+
+.unit, .value{
+  font-size: 25px;
+  color:#D62F3F;
+  padding-right: 8px;
+}
+
