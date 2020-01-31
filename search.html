@@ -3,7 +3,7 @@
  * @author ZHU Fangda
  * @Date 2020-01-28 195242
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-01-30 17:01:27
+ * @LastEditTime : 2020-01-31 17:22:10
  -->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bottom_nav.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="search.css">
     
     
     
@@ -29,64 +29,21 @@
     <![endif]-->
 
     <div id="container">
-      <div class="toolbar">
-        <h1>Hi! name</h1>
-        <a href="portail.html">
-          <img src="img/menu.svg"
-            width="30px"
-          />
-        </a>
-  
-      </div>
       
-      <div id="date">
-        <span>23</span>
-        <span>01</span>
-        <span>2020</span>
-      </div>
-  
-      <div id="bmi">
-        BMI<br>
-        25
-      </div>
-      
-      <div>
-        <table id="energy">
-          <tr>
-            <th>Intake</th>
-            <td>850 kcal</td>
-          </tr>
-    
-          <tr>
-            <th>Burn</th>
-            <td>300 kcal</td>
-          </tr>
-        </table>
-      </div>
-
-      
-      <div>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-         
-      </div>
-     
-      <div>
-        <img src="img/star.svg"
-        width="49px"/>
-    
-      </div>
-      
-      <div>
-        <img id="chart" src="img/chart.svg"
-      width="275px"/>
-  
-      </div>
-      
+        <div id="search">
+          <button onclick="location.href='search_result.html'">Search</button>
+          A Recipe
+        </div>
+        
+        
+        <div id="recommend" onclick="location.href='search_recomd.html'">
+          
+          <img src="img/recommend.svg">
+        
+        </div>
     
     </div>
-
     
-
     <div id="bottom-nav">
       <a href="home.html">
         <img src="img/home_no_selected.svg"/>

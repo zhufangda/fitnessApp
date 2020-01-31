@@ -1,0 +1,29 @@
+#container{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center ;
+}
+
+#container > div{
+  margin: 16px;
+}
+
+button{
+  display: block;
+  border: solid #FEC956 8px;
+  border-radius: 32px;
+  font-size: 32px;
+  color: #F7E9D0;
+  background-color:#D62F3F;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 32px;
+}
+
+#search{
+  color:#1D519E;
+  font-size: 30px;
+  text-align: center;
+}

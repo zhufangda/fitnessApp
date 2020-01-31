@@ -1,13 +1,27 @@
 body{
   font-family: Arial, sans-serif;
   font-weight: 900;
-  
+  margin: 0px;
 }
 
 
 h1{
   font-size: 30px;
   color:#1D519E;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 25px;
+  color:#1D519E;
+  font-weight: bold;
+}
+
+
+p{
+  font-size: 20px;
+  color:#1D519E;
+  font-weight: normal;
 }
 
 
@@ -28,4 +42,13 @@ h1{
   float: right;
   margin: 16px;
   text-align: right;
+}
+
+
+/* back button */
+#back>img{
+  position: fixed;
+  
+  margin: 32px;
+  /* margin-top: 32px; */
 }
