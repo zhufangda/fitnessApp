@@ -1,6 +1,6 @@
 body{
   font-family: Arial, sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   margin: 0px;
 }
 
@@ -47,9 +47,14 @@ p{
 
 
 /* back button */
-#back>img{
+#back{
   position: fixed;
-  
+  top: 0px;
+
   margin: 32px;
-  /* margin-top: 32px; */
+}
+
+/* back button */
+#back:hover{
+  opacity: 0.5;
 }
