@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html, body{
+  height:100%;
+  display:flex;
+  flex-direction: column;
+}
+
+form{
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+/* Sex radio button */
+.sex-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.sex-option{
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
+.sex-option input[type="radio"]{
+  display: none;
+}
+
+
+.sex-group label{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #F7E9D0;
+  background-color: #FEB30F;
+  clip-path: circle(50%);
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+  /* align-items: center; */
+}
+
+.sex-group input[type="radio"]:checked ~ label {
+  color: #1D519E;
+}
+
+.sex-group input[type="radio"]:hover ~ label {
+  opacity: 70%;
+}
+
+/* 输入框 */
+.input-group{
+  margin-bottom: 32px;
+  display: flex;
+  border-bottom: solid red;
+  align-items: center;
+}
+
+.input-group > input[type='text']{
+  width: 100%;
+  display:inline-block;
+  border: 0px;
+  font-size: 30px;
+  color: #1D519E;
+  font-weight: bold;
+  text-align: center;
+  outline:none
+}
+
+
+
+.input-group-addon{
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  color: #D62F3F;
+}
+
+
+
+/* 底部按钮 */
+.nav_btn{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav_btn > a:hover{
+  opacity: 0.5;
+}
+
+/** Show weight**/
+#weight_show{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin-bottom: 32px;
+  background-color: #FEB30F;
+  border-radius: 26px;
+}
+
+#weight_show span{
+  display: block;
+  width: 80%;
+  height: 1em;
+  background-color: #F7E9D0;
+  color:#1D519E;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 2em;
+}
+
+
+
+/** Style for frequence question **/
+input[name="freq"]{
+  display: none;
+}
+.freq-option label{
+  font-size: 30px;
+  color: #D62F3F;
+}
+
+input[name="freq"]:checked ~ label{
+  color: #1D519E;
+}
+
+input[name="freq"]:hover ~ label{
+ opacity: 0.7;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="110" width="110">
+  <g opacity="1">
+    <g opacity="1">
+      <ellipse fill="rgb(254,179,15)" fill-opacity="1" opacity="1" rx="55" ry="55" cx="55" cy="55"/>
+    </g>
+    <g opacity="1">
+      <text font-size="0" transform="translate(19, 18)">
+        <tspan font-size="50" font-family="Arial Black" font-weight="900" style="white-space: pre;text-transform: none" fill="rgb(247,233,208)" x="19.8251953125" y="55">F</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

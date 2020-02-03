@@ -14,9 +14,17 @@
 }
 
 /* Style the submit button */
-.input-group > .input-text{
+.input-group > input[type='text']{
   width: 50%;
   display:inline-block;
+  border-bottom: solid red;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 30px;
+  color: #1D519E;
+  font-weight: bolder;
+  text-align: center;
   /* background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
