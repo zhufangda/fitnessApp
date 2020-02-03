@@ -2,7 +2,7 @@
  * @Author: ZHU Fangda
  * @Date: 2020-01-16 20:04:58
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-02-03 16:25:09
+ * @LastEditTime : 2020-02-03 23:05:24
  * @Description: file content
  -->
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
-    
+    <script src="https://cdn.jsdelivr.net/npm/brownies"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -30,28 +30,28 @@
             <!-- 单选按钮 -->
   
         <div class="freq-option">
-            <input type="radio" name="freq" id="option1" />
+            <input type="radio" name="freq" value="option1" id="option1"/>
             <label for="option1">
                 Never
             </label>
         </div>
 
         <div class="freq-option">
-            <input type="radio" name="freq" id="option2" />
+            <input type="radio" name="freq" value="option2" id="option2"/>
             <label for="option2">
                 Once a week
             </label>
         </div>
         
         <div class="freq-option">
-            <input type="radio" name="freq" id="option3" />
+            <input type="radio" name="freq" value="option3" id="option3"/>
             <label for="option3">
                 2~5 times a week
             </label>
         </div>
 
         <div class="freq-option">
-            <input type="radio" name="freq" id="option4" />
+            <input type="radio" name="freq" value="option4" id="option4"/>
             <label for="option4">
                 Every day
             </label>
@@ -59,17 +59,40 @@
 
 
         <div class="nav_btn">
-            <a href="step1.html">
-                <img src="img/back.svg">
+            <a href="step1.html" >
+                <img src="img/back.svg" onclick="save()">
             </a>
 
             <a href="home.html">
-                <img src="img/next.svg">
+                <img src="img/next.svg" onclick="save()">
             </a>
         </div>
 
     </form>
 
-</body>
+</body><script>
+    // Extract it since we only define `brownies` globally
 
+    
+    let radio = document.getElementsByName("freq");
+  
+    for(let i=0; i<radio.length;i++){
+      if(radio[i].value==localStorage.freq){
+        radio[i].checked=true;
+      }
+    }
+        
+  
+    function save(){
+        let radio = document.getElementsByName("freq");
+        for(let i=0; i<radio.length;i++){
+          if(radio[i].checked){
+            localStorage.freq = radio[i].value;
+          }
+        }
+
+        console.log(localStorage);
+    }
+    
+  </script>
 </html>

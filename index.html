@@ -5,7 +5,7 @@
  * @author: ZHU Fangda
  * @Date: 2020-01-16 19:37:34
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-02-03 15:51:20
+ * @LastEditTime : 2020-02-03 22:31:34
  -->
 <html>
 
@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
-
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
@@ -25,20 +25,20 @@
   <form>
 
     <div class="input-group">
-      <input type="text" class="form-control " placeholder="Name" />
+      <input type="text" class="form-control " placeholder="Name" id="name"/>
     </div>
 
     <!-- 单选按钮 -->
     <div class="sex-group">
       <div class="sex-option">
-        <input type="radio" name="sex" id="female" />
+        <input type="radio" name="sex" id="female" value="f" onclick="save()"/>
         <label for="female">
           F
         </label>
       </div>
 
       <div class="sex-option">
-        <input type="radio" name="sex" id="male" />
+        <input type="radio" name="sex" value="m" id="male" />
         <label for="male">M</label>
       </div>
 
@@ -47,17 +47,17 @@
     <!-- 文本输入框 -->
 
     <div class="input-group">
-      <input type="text" class="form-control " placeholder="Birthday" />
+      <input type="text" class="form-control" id="birthday" placeholder="Birthday" />
     </div>
 
 
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Height" />
+      <input type="text" class="form-control" id="height" placeholder="Height" />
       <span class="input-group-addon">m</span>
     </div>
 
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Weight" />
+      <input type="text" class="form-control" id="weight" placeholder="Weight" />
       <span class="input-group-addon">kg</span>
     </div>
 
@@ -66,13 +66,49 @@
         <!-- <img src="img/back.svg"> -->
       </a>
 
-      <a href="step1.html">
-        <img src="img/next.svg">
+      <a href="step1.html" >
+        <img src="img/next.svg" onclick="save()">
       </a>
     </div>
 
   </form>
 
 </body>
+
+<script>
+  // Extract it since we only define `brownies` globally
+  
+  document.getElementById("name").value = localStorage.name;
+  
+  let radio = document.getElementsByName("sex");
+
+  for(let i=0; i<radio.length;i++){
+    if(radio[i].value==localStorage.sex){
+      radio[i].checked=true;
+    }
+  }
+      
+  document.getElementById("birthday").value = localStorage.birthday;
+  document.getElementById("height").value = localStorage.height;
+  document.getElementById("weight").value = localStorage.weight;
+
+
+  function save(){
+      localStorage.name = document.getElementById('name').value
+      // localStorage.sex = document.getElementById('sex').value
+      let radio = document.getElementsByName("sex");
+      for(let i=0; i<radio.length;i++){
+        if(radio[i].checked){
+          localStorage.sex = radio[i].value;
+        }
+      }
+
+      localStorage.birthday = document.getElementById('birthday').value
+      localStorage.height = document.getElementById('height').value
+      localStorage.weight = document.getElementById('weight').value
+      console.log(localStorage);
+  }
+  
+</script>
 
 </html>

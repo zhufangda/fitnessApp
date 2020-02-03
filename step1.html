@@ -2,7 +2,7 @@
  * @Author: ZHU Fangda
  * @Date: 2020-01-16 20:04:58
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-02-03 15:49:04
+ * @LastEditTime : 2020-02-03 22:58:03
  * @Description: file content
  -->
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
-    
+    <script src="https://cdn.jsdelivr.net/npm/brownies"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,7 +27,7 @@
 
         <h1>Current weight</h1>
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Weight">
+            <input type="text" class="form-control" id="weight" placeholder="Weight">
             <span class="input-group-addon">kg</span>
         </div>
 
@@ -39,27 +39,52 @@
         </div>
 
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Weight">
+            <input type="text" class="form-control" id="hope_weight" placeholder="Weight" onkeyup="synText(event)">
             <span class="input-group-addon">kg</span>
         </div>
 
 
         <div class="nav_btn">
-            <a href="index.html">
+            <a href="index.html" onclick="save()">
                 <img src="img/back.svg">
             </a>
 
-            <a href="step2.html">
+            <a href="step2.html" onclick="save()">
                 <img src="img/next.svg">
             </a>
         </div>
 
     </form>
 
-    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- 包括所有已编译的插件 -->
-    <script src="js/bootstrap.min.js"></script>
+
 </body>
+
+<script>
+    // Extract it since we only define `brownies` globally
+
+    document.getElementById("weight").value = localStorage.weight;
+    
+    if(localStorage.hope_weight){
+        document.getElementById("hope_weight").value = localStorage.hope_weight;document.getElementById("show_text").innerHTML = hope_weight.value + " kg";
+    }
+    document.getElementById("hope_weight").value = localStorage.hope_weight;
+    
+    const heop_weight = document.getElementById('hope_weight');
+
+    
+
+    function synText(e) {
+        console.log("press" + e)
+        document.getElementById("show_text").innerHTML = hope_weight.value + " kg";
+    }
+
+
+    function save(){
+        localStorage.weight = document.getElementById('weight').value
+        localStorage.hope_weight = document.getElementById('hope_weight').value
+    }
+
+    
+  </script>
 
 </html>
