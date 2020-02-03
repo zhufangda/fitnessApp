@@ -3,89 +3,85 @@
  * @author ZHU Fangda
  * @Date 2020-01-28 195242
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-01-30 17:16:27
+ * @LastEditTime : 2020-02-03 17:49:35
  -->
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html> 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    
+    <title>Command</title>
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bottom_nav.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
-    
-    
+    <link rel="stylesheet" href="command.css">
     
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-    <div id="container">
-      <div class="toolbar">
-        <h1>Hi! name</h1>
-        <a href="portail.html">
-          <img src="img/menu.svg"
-            width="30px"
-          />
-        </a>
-  
-      </div>
-      
-      <div id="date">
-        <span>23</span>
-        <span>01</span>
-        <span>2020</span>
-      </div>
-  
-      <div id="bmi">
-        BMI<br>
-        25
-      </div>
-      
-      <div>
-        <table id="energy">
-          <tr>
-            <th>Intake</th>
-            <td>850 kcal</td>
-          </tr>
-    
-          <tr>
-            <th>Burn</th>
-            <td>300 kcal</td>
-          </tr>
-        </table>
+    <h1>Easy take to healthy food</h1>
+
+    <div class="item">
+      <div class="photo_desp">
+        <div class="price">
+          1 €
+        </div>
+        <img src="img/prod1.png">
       </div>
 
-      
-      <div>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-         
+      <div class="card">
+        <legend>fruits and vegetables juice</legend>
+        <div class="choose-amount ">
+          <img src="img/minus_item.svg" class="btn_minus">
+          <input type="text" class="quantity" id="quantity_prod1">
+          <img src="img/add_item.svg" class="btn_add">
+          <img src="img/send_to_cart.svg" clas="btn_add_to_cart">
+        </div>
       </div>
-     
-      <div>
-        <img src="img/star.svg"
-        width="49px"/>
+    </div>
     
+    <div class="item">
+      <div class="photo_desp">
+        <div class="price">
+          1 €
+        </div>
+        <img src="img/prod1.png">
       </div>
-      
-      <div>
-        <img id="chart" src="img/chart.svg"
-      width="275px"/>
-        
+
+      <div class="card">
+        <legend>fruits and vegetables juice</legend>
+        <div class="choose-amount ">
+          <img src="img/minus_item.svg" class="btn_minus">
+          <input type="text" class="quantity" id="quantity_prod1">
+          <img src="img/add_item.svg" class="btn_add">
+          <img src="img/send_to_cart.svg" clas="btn_add_to_cart">
+        </div>
       </div>
-      
-    
     </div>
 
-    
+    <div class="item">
+      <div class="photo_desp">
+        <div class="price">
+          1 €
+        </div>
+        <img src="img/prod1.png">
+      </div>
+
+      <div class="card">
+        <legend>fruits and vegetables juice</legend>
+        <div class="choose-amount ">
+          <img src="img/minus_item.svg" class="btn_minus">
+          <input type="text" class="quantity" id="quantity_prod1">
+          <img src="img/add_item.svg" class="btn_add">
+          <img src="img/send_to_cart.svg" clas="btn_add_to_cart">
+        </div>
+      </div>
+    </div>
+
+    <div style="width:100%; height: 72px;"></div>
 
     <div id="bottom-nav">
       <a href="home.html">
@@ -105,6 +101,6 @@
       </a>
       
     </div>
-    <script src="" async defer></script>
+    
   </body>
 </html>

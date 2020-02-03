@@ -1,0 +1,74 @@
+h1{
+  color:#D62F3F;
+}
+
+body{
+  background-color: #FEC956;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+}
+
+
+/* Photo desp */
+
+.item{
+  width: 100%;
+}
+
+.price{
+  position: relative;
+  width: 3em;
+  height: 3em;
+  line-height: 90px;
+  border-radius: 1.5em;
+  
+  top:1.5em;
+  left:50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: 30px;
+  color:#D62F3F;
+
+  background-color: #FEC956;
+  
+}
+.photo_desp{
+  margin-bottom: 16px;
+}
+
+.card{
+  background-color: #F7E9D0;
+  padding: 16px;
+}
+
+.card > legend{
+  font-size: 20px;
+  color: #1D519E;
+}
+.choose-amount {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 16px;
+  margin-bottom: 16px;
+}
+
+.btn_add, .btn_minus{
+  width: 45px;
+  height: 45px;
+
+}
+
+.quantity{
+  border: 0px;
+  background-color: #FEC956;
+  border-radius: 6px;
+  font-size: 25px;
+  width: 30%;
+  outline: none;
+  text-align: center;
+}
