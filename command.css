@@ -5,11 +5,14 @@ h1{
 body{
   background-color: #FEC956;
   height: auto;
+  z-index: 0;
+  display: flex;
 }
 
 #container{
   height: auto;
   padding: 32px 32px 64px 32px;
+  z-index: 5;
 
 }
 
@@ -66,11 +69,65 @@ body{
 }
 
 .quantity{
+  width: 30%;
+  height: 45px;
+  line-height: 45px;
   border: 0px;
   background-color: #FEC956;
   border-radius: 6px;
   font-size: 25px;
-  width: 30%;
   outline: none;
   text-align: center;
+  vertical-align: middle;
+  color: #D62F3F;
+}
+
+/* Decoration in background */
+#deco1{
+  position: fixed;
+  left: 35px;
+  z-index:0;
+  opacity: 0.7;
+}
+
+#deco2{
+  position: fixed;
+  right: 35px;
+  bottom:50%;
+  z-index:0;
+  opacity: 0.7;
+}
+
+
+#deco3{
+  position: fixed;
+  left: 35px;
+  bottom: 0px;
+  z-index:0;
+  opacity: 0.7;
+}
+
+#trolley{
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  top: 16px;
+  right: 16px;
+  background: url(img/basket_blue.svg) no-repeat;
+  background-size: contain;
+  /* align-items: center;
+  text-align: center; */
+  z-index: 10;
+}
+
+#trolley > span{
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  color: #FEC956;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  
+
 }

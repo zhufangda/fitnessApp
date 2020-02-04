@@ -3,7 +3,7 @@
  * @author ZHU Fangda
  * @Date 2020-01-28 195242
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-02-04 14:49:17
+ * @LastEditTime : 2020-02-04 16:11:16
  -->
 <!DOCTYPE html>
 <html> 
@@ -19,8 +19,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="command.css">
     
+
+
+
   </head>
   <body>
+    <img src="img/basket_yellow.svg" id="deco1">
+    <img src="img/tag_yellow.svg" id="deco2">
+    <img src="img/tableware_yellow.svg" id="deco3">
+
+    <div id="trolley">
+      <span id="total">0</span>
+    </div>
+    
+
     <div id="container">
       <h1>Easy take to healthy food</h1>
 
@@ -33,11 +45,11 @@
         </div>
   
         <div class="card">
-          <legend>fruits and vegetables juice</legend>
+          <legend>Fruits and vegetables juice</legend>
           <div class="choose-amount ">
-            <img src="img/minus_item.svg" class="btn_minus">
+            <img src="img/minus_item.svg" class="btn_minus" onclick="minus('quantity_prod1')">
             <div class="quantity" id="quantity_prod1"></div>
-            <img src="img/add_item.svg" class="btn_add">
+            <img src="img/add_item.svg" class="btn_add" onclick="add('quantity_prod1')">
             <img src="img/send_to_cart.svg" clas="btn_add_to_cart">
           </div>
         </div>
@@ -46,17 +58,17 @@
       <div class="item">
         <div class="photo_desp">
           <div class="price">
-            1 €
+            3 €
           </div>
-          <img src="img/prod1.png">
+          <img src="img/prod2.png">
         </div>
   
         <div class="card">
-          <legend>fruits and vegetables juice</legend>
+          <legend>Skinless chicken thigh </legend>
           <div class="choose-amount ">
-            <img src="img/minus_item.svg" class="btn_minus">
+            <img src="img/minus_item.svg" class="btn_minus" onclick="minus('quantity_prod2')">
             <div class="quantity" id="quantity_prod2"></div>
-            <img src="img/add_item.svg" class="btn_add">
+            <img src="img/add_item.svg" class="btn_add" onclick="add('quantity_prod2')">
             <img src="img/send_to_cart.svg" clas="btn_add_to_cart">
           </div>
         </div>
@@ -65,17 +77,17 @@
       <div class="item">
         <div class="photo_desp">
           <div class="price">
-            1 €
+            3 €
           </div>
-          <img src="img/prod1.png">
+          <img src="img/prod3.png">
         </div>
   
         <div class="card">
-          <legend>fruits and vegetables juice</legend>
+          <legend>Protein drink</legend>
           <div class="choose-amount ">
-            <img src="img/minus_item.svg" class="btn_minus">
+            <img src="img/minus_item.svg" class="btn_minus" onclick="minus('quantity_prod3')">
             <div class="quantity" id="quantity_prod3"></div>
-            <img src="img/add_item.svg" class="btn_add">
+            <img src="img/add_item.svg" class="btn_add" onclick="add('quantity_prod3')">
             <img src="img/send_to_cart.svg" clas="btn_add_to_cart">
           </div>
         </div>
@@ -84,7 +96,7 @@
       
 
 
-    <div id="bottom-nav">
+    <div id="bottom-nav" >
       <a href="home.html">
         <img src="img/home_no_selected.svg"/>
       </a>
@@ -102,6 +114,75 @@
       </a>
       
     </div>
+
+
+        
+  <script>
+
+    const prodList = ['quantity_prod1', 'quantity_prod2', 'quantity_prod3'];
+
+    function updateInterface(){
+      for(let prod of prodList){
+        // console.log("%s %s %s", prod, document.getElementById(prod),localStorage[prod] )
+        if(localStorage[prod]){
+          document.getElementById(prod).innerText = localStorage[prod]
+        }else{
+          document.getElementById(prod).innerText = 0
+        }
+      }
+
+      if(parseInt(localStorage['total'])){
+          document.getElementById('total').innerText = localStorage['total']
+        }else{
+          document.getElementById('total').innerText = ""
+        }
+      
+    }
     
+    
+    function updateTotal(){
+      localStorage["total"] = 0;
+
+      for(let prod of prodList){
+        if(parseInt(localStorage[prod])){
+          localStorage["total"] = parseInt(localStorage["total"]) + parseInt(localStorage[prod])
+        }
+      }
+      
+    }
+
+
+    function add(name){
+
+      if( parseInt(localStorage[name])){
+        localStorage[name]++;
+      }else{
+        localStorage[name]=1;
+      }
+      
+      updateTotal();
+      updateInterface();
+    }
+
+
+    function minus(name){
+
+      if(parseInt(localStorage[name]) && parseInt(localStorage[name]) > 1){
+        localStorage[name]--;
+      }else{
+        localStorage[name]=0;
+      }
+      
+      updateTotal();
+      updateInterface();
+    }
+    
+    updateInterface()
+
+  </script>
+
+ 
   </body>
+
+
 </html>
