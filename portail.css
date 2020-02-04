@@ -3,29 +3,45 @@
   padding: 32px;
 }
 
-/* 输入框 */
 .input-group{
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-grow: 1;
 }
 
-.input-group label{
+.label-group, .text-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.label-group{
+  flex-shrink: 2;
+}
+
+.text-group{
+  flex-shrink: 1;
+}
+
+
+.label-group label{
   font-size: 30px;
   color: #1D519E;
   font-weight: bolder;
-  margin-left: 48px;
+  text-align: left;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 1.5em;
 }
 
-.input-text {
-  width: 40%;
-  margin-right: 48px;
-}
 
+input[type=submit]:hover {
+  background-color: #45a049;
+}
 
 input[type=submit] {
   width: 20%;
+  min-width: 100px;
   display:block;
   text-align: center;
   background-color: #D62F3F;
@@ -39,8 +55,22 @@ input[type=submit] {
   cursor: pointer;
 }
 
+/* 输入框 */
+/* .input-group{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+
+
+.input-text {
+  margin-right: 48px;
+}
+
+
+
+
 
 /* Add a background color to the submit button on mouse-over */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
