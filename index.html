@@ -5,7 +5,7 @@
  * @author: ZHU Fangda
  * @Date: 2020-01-16 19:37:34
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-02-03 22:31:34
+ * @LastEditTime : 2020-02-04 14:38:43
  -->
 <html>
 
@@ -24,7 +24,7 @@
 
   <form>
 
-    <div class="input-group">
+    <div class="input-text">
       <input type="text" class="form-control " placeholder="Name" id="name"/>
     </div>
 
@@ -46,19 +46,19 @@
 
     <!-- 文本输入框 -->
 
-    <div class="input-group">
+    <div class="input-text">
       <input type="text" class="form-control" id="birthday" placeholder="Birthday" />
     </div>
 
 
-    <div class="input-group">
+    <div class="input-text">
       <input type="text" class="form-control" id="height" placeholder="Height" />
-      <span class="input-group-addon">m</span>
+      <span class="input-text-addon">m</span>
     </div>
 
-    <div class="input-group">
+    <div class="input-text">
       <input type="text" class="form-control" id="weight" placeholder="Weight" />
-      <span class="input-group-addon">kg</span>
+      <span class="input-text-addon">kg</span>
     </div>
 
     <div class="nav_btn">
@@ -78,7 +78,10 @@
 <script>
   // Extract it since we only define `brownies` globally
   
-  document.getElementById("name").value = localStorage.name;
+  if(localStorage.name){
+    document.getElementById("name").value = localStorage.name;
+  }
+  
   
   let radio = document.getElementsByName("sex");
 
@@ -87,25 +90,46 @@
       radio[i].checked=true;
     }
   }
-      
-  document.getElementById("birthday").value = localStorage.birthday;
-  document.getElementById("height").value = localStorage.height;
-  document.getElementById("weight").value = localStorage.weight;
+  
+  if(localStorage.birthday){
+    document.getElementById("birthday").value = localStorage.birthday;
+  }
 
-
+  if(localStorage.height){
+    document.getElementById("height").value = localStorage.height;
+  }
+  
+  if(localStorage.weight){
+    document.getElementById("weight").value = localStorage.weight;
+  }
+  
+  
   function save(){
-      localStorage.name = document.getElementById('name').value
-      // localStorage.sex = document.getElementById('sex').value
-      let radio = document.getElementsByName("sex");
-      for(let i=0; i<radio.length;i++){
-        if(radio[i].checked){
-          localStorage.sex = radio[i].value;
-        }
-      }
 
+    if(document.getElementById('name').value){
+      localStorage.name = document.getElementById('name').value;
+    }
+    
+    // localStorage.sex = document.getElementById('sex').value
+    let radio = document.getElementsByName("sex");
+    for(let i=0; i<radio.length;i++){
+      if(radio[i].checked){
+        localStorage.sex = radio[i].value;
+      }
+    }
+
+    if(document.getElementById('birthday').value){
       localStorage.birthday = document.getElementById('birthday').value
+    }
+
+    if(document.getElementById('height').value){
       localStorage.height = document.getElementById('height').value
+    }
+      
+    if(document.getElementById('weight').value){
       localStorage.weight = document.getElementById('weight').value
+    }
+      
       console.log(localStorage);
   }
   

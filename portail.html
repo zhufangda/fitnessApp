@@ -3,7 +3,7 @@
  * @author ZHU Fangda
  * @Date 2020-01-28 195242
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-02-02 16:31:06
+ * @LastEditTime : 2020-02-04 14:51:29
  -->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -19,69 +19,148 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="portail.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portail.css">
+
 </head>
 
 <body>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <a id="back" href="home.html">
+  <a id="back" href="home.html" onclick="save()">
     <img src="img/back.svg" width="22px" height="43px" />
   </a>
 
-  <form>
+  <form id="container">
 
-    <input type="submit" action="home.html" target="_parent" value="Save">
+    <input type="submit" action="home.html" target="_parent" value="Save" onclick="save()">
 
-    <div class="sex-group">
-      <input type="radio" name="gender" value="female"> F
-      <input type="radio" name="gender" value="male"> M
-    </div>
+      <!-- 单选按钮 -->
+      <div class="sex-group">
+        <div class="sex-option">
+          <input type="radio" name="sex" id="female" value="f" onclick="save()"/>
+          <label for="female">
+            F
+          </label>
+        </div>
+  
+        <div class="sex-option">
+          <input type="radio" name="sex" value="m" id="male" />
+          <label for="male">M</label>
+        </div>
+  
+      </div>
 
     <div class="input-group">
       <label>name</label>
       <div class="input-text">
-        <input type="text" name="name" />
+        <input type="text" name="name" id="name"/>
       </div>
     </div>
 
     <div class="input-group">
       <label>d/m/y</label>
       <div class="input-text">
-        <input type="text" name="date" value="11/08/1997">
+        <input type="text" id="birthday" value="11/08/1997">
       </div>
     </div>
 
     <div class="input-group">
       <label>height</label>
       <div class="input-text">
-        <input type="text" name="height" value="165">
-        <span>cm</span>
+        <input type="text" id="height" value="165">
+        <span class="input-text-addon">cm</span>
       </div>
     </div>
 
     <div class="input-group">
-      <label>current </label>
+      <label>current</label>
       <div class="input-text">
-        <input type="text" name="current" value="54">
-        <span>kg</span>
+        <input type="text" id="weight" value="54">
+        <span class="input-text-addon">kg</span>
       </div>
     </div>
 
     <div class="input-group">
-      <label>hope </label>
+      <label>hope</label>
       <div class="input-text">
-        <input type="text" name="hope" value="50">
-        <span>kg</span>
+        <input type="text" id="hope_weight" value="50">
+        <span class="input-text-addon">kg</span>
       </div>
     </div>
 
 
   </form>
 
-  <script src="" async defer></script>
 </body>
+
+<script>
+  // Extract it since we only define `brownies` globally
+  
+  if(localStorage.name){
+    document.getElementById("name").value = localStorage.name;
+  }
+  
+  
+  let radio = document.getElementsByName("sex");
+
+  for(let i=0; i<radio.length;i++){
+    if(radio[i].value==localStorage.sex){
+      radio[i].checked=true;
+    }
+  }
+  
+  if(localStorage.birthday){
+    document.getElementById("birthday").value = localStorage.birthday;
+  }
+
+  if(localStorage.height){
+    document.getElementById("height").value = localStorage.height;
+  }
+  
+  if(localStorage.weight){
+    document.getElementById("weight").value = localStorage.weight;
+  }
+
+  if(localStorage.hope_weight){
+    document.getElementById("hope_weight").value = localStorage.hope_weight;
+  }
+  
+  
+  function save(){
+
+    if(document.getElementById('name').value){
+      localStorage.name = document.getElementById('name').value;
+    }
+    
+    // localStorage.sex = document.getElementById('sex').value
+    let radio = document.getElementsByName("sex");
+    for(let i=0; i<radio.length;i++){
+      if(radio[i].checked){
+        localStorage.sex = radio[i].value;
+      }
+    }
+
+    if(document.getElementById('birthday').value){
+      localStorage.birthday = document.getElementById('birthday').value
+    }
+
+    if(document.getElementById('height').value){
+      localStorage.height = document.getElementById('height').value
+    }
+      
+    if(document.getElementById('weight').value){
+      localStorage.weight = document.getElementById('weight').value
+    }
+    
+    if(document.getElementById('hope_weight').value){
+      localStorage.hope_weight = document.getElementById('hope_weight').value
+    }
+
+      console.log(localStorage);
+  }
+  
+</script>
 
 </html>

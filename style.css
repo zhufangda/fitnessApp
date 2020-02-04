@@ -1,45 +1,65 @@
-body{
+html,
+body {
+  width: 100%;
+  height: 100%;
   font-family: Arial, sans-serif;
   font-weight: bold;
   margin: 0px;
+  background-color: #F7E9CE;
 }
 
+input[type="text"] {
+  background-color: transparent;
+}
 
-h1{
+#container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
   font-size: 30px;
-  color:#1D519E;
+  color: #1D519E;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-h2{
+h2 {
   font-size: 25px;
-  color:#1D519E;
+  color: #1D519E;
   font-weight: bold;
 }
 
 
-p{
+p {
   font-size: 20px;
-  color:#1D519E;
+  color: #1D519E;
   font-weight: normal;
 }
 
 
 /* 工具栏toolbar */
 
-.toolbar{
+.toolbar {
   width: 100%;
-  display:block
+  display: block
 }
 
-.toolbar > h1{
+.toolbar>h1 {
   display: inline-block;
   margin-left: 16px;
 }
 
 
-.toolbar > a{
+.toolbar>a {
   float: right;
   margin: 16px;
   text-align: right;
@@ -47,7 +67,7 @@ p{
 
 
 /* back button */
-#back{
+#back {
   position: fixed;
   top: 0px;
 
@@ -55,6 +75,79 @@ p{
 }
 
 /* back button */
-#back:hover{
+#back:hover {
   opacity: 0.5;
+}
+
+
+/* 输入框 */
+.input-text {
+  margin-bottom: 32px;
+  display: flex;
+  border-bottom: solid red;
+  align-items: center;
+}
+
+.input-text>input[type='text'] {
+  width: 100%;
+  display: inline-block;
+  border: 0px;
+  font-size: 30px;
+  color: #1D519E;
+  font-weight: bold;
+  text-align: center;
+  outline: none
+}
+
+
+
+.input-text-addon {
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  color: #D62F3F;
+}
+
+
+/* Sex radio button */
+.sex-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.sex-option {
+  text-align: center;
+  display: inline-block;
+}
+
+.sex-option input[type="radio"] {
+  display: none;
+}
+
+
+.sex-group label {
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  font-size: 50px;
+  color: #F7E9D0;
+  background-color: #FEB30F;
+  clip-path: circle(50%);
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+  /* align-items: center; */
+}
+
+.sex-group input[type="radio"]:checked~label {
+  color: #1D519E;
+}
+
+.sex-group input[type="radio"]:hover~label {
+  opacity: 70%;
 }

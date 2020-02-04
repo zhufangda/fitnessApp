@@ -1,15 +1,16 @@
-#container{
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items:center ;
-}
-
 h1{
   width: 100%;
   text-align: center;
 }
+
+#chart{
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+
 
 #container > div{
   margin: 16px;
@@ -50,3 +51,10 @@ h1{
   padding-right: 8px;
 }
 
+#scan{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+
+}
