@@ -90,7 +90,7 @@ p {
 .input-text {
   margin-bottom: 32px;
   display: flex;
-  border-bottom: solid red;
+  border-bottom: solid #D62F3F;
   align-items: center;
 }
 
