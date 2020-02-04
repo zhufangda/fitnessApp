@@ -3,7 +3,7 @@
  * @author ZHU Fangda
  * @Date 2020-01-28 195242
  * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-02-04 11:20:17
+ * @LastEditTime : 2020-02-04 16:24:42
  -->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -30,7 +30,7 @@
 
     <div id="container">
       <div class="toolbar">
-        <h1>Hi! name</h1>
+        <h1 id="name">Hi!</h1>
         <a href="portail.html">
           <img src="img/menu.svg"
             width="30px"
@@ -103,5 +103,17 @@
       
     </div>
     <script src="" async defer></script>
+
+    
+<script>
+  // Extract it since we only define `brownies` globally
+  
+  if(localStorage.name){
+    document.getElementById("name").innerText = "Hi! " + localStorage.name.toUpperCase();
+  }
+  
+</script>
+
+
   </body>
 </html>

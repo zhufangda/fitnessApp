@@ -50,7 +50,13 @@ p {
 
 .toolbar {
   width: 100%;
-  display: block
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  align-items: baseline;
 }
 
 .toolbar>h1 {
