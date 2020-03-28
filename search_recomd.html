@@ -2,8 +2,8 @@
  * @description:  
  * @author: ZHU Fangda
  * @Date: 2020-01-31 15:12:00
- * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-01-31 17:33:35
+ * @LastEditors: ZHU Fangda
+ * @LastEditTime: 2020-03-28 18:57:44
  -->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -31,12 +31,14 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <a id="back" href="search.html">
-      <img src="img/back.svg"
-        width="22px"
-        height="43px"
-      />
-    </a>
+    <div id="toolbar">
+      <a id="back" href="search.html">
+        <img src="img/back.svg"
+          width="22px"
+          height="43px"
+        />
+      </a>  
+    </div>
     
   <div id="container">
 
@@ -46,7 +48,11 @@
           <h1>Breakfast</h1>
           <div></div>
         </div>
-        <img src="img/breakfast.png">
+        <div class="img_content">
+          <img class="kcal" src="img/breakfast_kcal.svg">
+          <img class="deco" src="img/breakfast_deco.svg">
+          <img class="main_img" src="img/breakfast.png">
+        </div>
         <h2>sandwich and
           mango yogurt
         </h2>
@@ -57,7 +63,11 @@
           <h1>Lunch</h1>
           <div></div>
         </div>
-        <img src="img/lunch.png">
+        <div class="img_content">
+          <img class="kcal" src="img/lunch_kcal.svg">
+          <img class="deco" src="img/lunch_deco.svg">
+          <img class="main_img" src="img/lunch.png">
+        </div>
         <h2>tomato stewed chicken
         </h2>
       </div>
@@ -65,9 +75,13 @@
       <div id="dinner" class="result">
         <div class="title">
           <h1>Dinner</h1>
-          <div></div>
+        <div></div>
         </div>
-        <img src="img/dinner.png">
+        <div class="img_content">
+          <img class="kcal" src="img/dinner_kcal.svg">
+          <img class="deco" src="img/dinner_deco.svg">
+          <img class="main_img" src="img/dinner.png">
+        </div>
         <h2>tomato stewed chicken
         </h2>
       </div>

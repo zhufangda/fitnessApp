@@ -4,9 +4,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items:center ;
+  margin-top: 72px;
 }
 
 #container > div{
+  margin: 16px;
+}
+#container > input{
   margin: 16px;
 }
 
@@ -56,4 +60,39 @@
 
 #chart{
   margin-bottom: 50px ;
+}
+
+
+span{
+  color: #1D519E;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 工具栏toolbar */
+
+.toolbar {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  align-items: baseline;
+  background-color: #F7E9CE;
+}
+
+.toolbar>h1 {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+
+.toolbar>a {
+  float: right;
+  margin: 16px;
+  text-align: right;
 }

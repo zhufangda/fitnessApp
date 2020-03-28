@@ -1,3 +1,29 @@
+
+@media screen and (max-width: 400px) {
+  /* back button */
+  #back {
+    position: fixed;
+    top: 0px;
+    margin: 16px;
+  }
+}
+
+@media screen and (min-width:400px){
+  /* back button */
+  #back {
+    position: fixed;
+    top: 0px;
+    margin: 32px;
+  }
+}
+
+/* back button */
+#back:hover {
+  opacity: 0.5;
+}
+
+
+
 html,
 body {
   width: 100%;
@@ -45,50 +71,9 @@ p {
   font-weight: normal;
 }
 
-
-/* 工具栏toolbar */
-
-.toolbar {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
-  align-items: baseline;
-}
-
-.toolbar>h1 {
-  display: inline-block;
-  margin-left: 16px;
-}
-
-
-.toolbar>a {
-  float: right;
-  margin: 16px;
-  text-align: right;
-}
-
-
-/* back button */
-#back {
-  position: fixed;
-  top: 0px;
-
-  margin: 32px;
-}
-
-/* back button */
-#back:hover {
-  opacity: 0.5;
-}
-
-
 /* 输入框 */
 .input-text {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   display: flex;
   border-bottom: solid #D62F3F;
   align-items: center;
@@ -98,7 +83,7 @@ p {
   width: 100%;
   display: inline-block;
   border: 0px;
-  font-size: 30px;
+  font-size: 20px;
   color: #1D519E;
   font-weight: bold;
   text-align: center;

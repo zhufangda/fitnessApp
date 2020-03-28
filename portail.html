@@ -2,8 +2,8 @@
  * @description  
  * @author ZHU Fangda
  * @Date 2020-01-28 195242
- * @LastEditors  : ZHU Fangda
- * @LastEditTime : 2020-02-04 16:38:45
+ * @LastEditors: ZHU Fangda
+ * @LastEditTime: 2020-03-28 17:25:52
  -->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -27,14 +27,19 @@
 <body>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+ 
+      <![endif]-->
+<div class="toolbar">
   <a id="back" href="home.html" onclick="save()">
     <img src="img/back.svg" width="22px" height="43px" />
   </a>
+  <input type="submit" action="home.html" target="_parent" value="Save" onclick="save()">
+</div>
+
 
   <form id="container">
 
-    <input type="submit" action="home.html" target="_parent" value="Save" onclick="save()">
+
 
       <!-- 单选按钮 -->
       <div class="sex-group">

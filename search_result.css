@@ -1,3 +1,87 @@
+/* At the top level of your code */
+@media screen and (max-width: 400px) {
+  h1{
+    font-size: 20px;
+    margin: 0px;
+  }
+
+  p{
+    font-size: 16px;
+    margin: 8px;
+    text-align: left;
+  }
+  
+  
+
+  .result > img{
+    width: 30%;
+    height: auto;
+    display: block;
+  
+  }
+  
+  .result > .content{
+    width:100%;
+    display: block;
+    padding-left: 16px;
+  }
+  
+  #search{
+    color:#1D519E;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .results{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  
+button{
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 16px;
+}
+
+
+}
+
+@media screen and (min-width:400px){
+  .result > img{
+    width: 148px;
+    height: 148px;
+    display: block;
+  
+  }
+  
+  .result > .content{
+    display: block;
+    margin-left: 16px;
+  }
+    
+button{
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 32px;
+}
+  
+.results{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+}
 
 
 button{
@@ -7,9 +91,6 @@ button{
   font-size: 32px;
   color: #F7E9D0;
   background-color:#D62F3F;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin: 32px;
 }
 
 #container{
@@ -20,37 +101,14 @@ button{
   align-items:center ;
 }
 
-
-.results{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 16px;
-  width: 100%;
-}
 .result{
-  width: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 16px;
+  padding: 16px;
 }
 
-.result > img{
-  width: 148px;
-  height: 148px;
-  display: block;
 
-}
-
-.result > .content{
-  display: block;
-  margin-left: 32px;
-}
 
 #search{
   color:#1D519E;

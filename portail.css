@@ -1,6 +1,7 @@
 #container{
   box-sizing: border-box;
-  padding: 32px;
+  padding: 16px;
+  margin-top: 64px;
 }
 
 .input-group{
@@ -16,7 +17,7 @@
 }
 
 .label-group{
-  flex-shrink: 2;
+  flex-shrink: 3;
 }
 
 .text-group{
@@ -25,12 +26,12 @@
 
 
 .label-group label{
-  font-size: 30px;
+  font-size: 20px;
   color: #1D519E;
   font-weight: bolder;
   text-align: left;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-bottom: 1.5em;
 }
 
@@ -54,6 +55,28 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+
+
+/* 工具栏toolbar */
+
+.toolbar {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: baseline;
+  background-color: #F7E9CE;
+  z-index: 100;
+}
+
+.toolbar>input {
+  display: block;
+  margin: 16px auto;
+  /* align-items: center; */
+}
+
+
 
 /* 输入框 */
 /* .input-group{
